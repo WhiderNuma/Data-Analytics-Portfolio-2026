@@ -14,7 +14,7 @@
     <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
     <WindowsPersistSimpleIdentifiers />
   </document-format-change-manifest>
-  <repository-location id='Optimizacion_Inventario' path='/workbooks' revision='1.0' />
+  <repository-location id='Optimizacion_Inventario' path='/workbooks' revision='1.1' />
   <preferences>
     <preference name='ui.encoding.shelf.height' value='24' />
     <preference name='ui.shelf.height' value='26' />
@@ -26,8 +26,11 @@
           <named-connection caption='Inventario_Final_Portfolio' name='textscan.0825sa21q58zra1ez0enb0pwb4n0'>
             <connection class='textscan' directory='C:/Users/numaj/Downloads' filename='Inventario_Final_Portfolio.csv' password='' server='' workgroup-auth-mode='as-is' />
           </named-connection>
+          <named-connection caption='04_inventario_final' name='textscan.0aq4b431x3jx631bvddig0vv8v6t'>
+            <connection class='textscan' directory='C:/Users/numaj/Downloads/datos/proyecto_data/Data-Analytics-Portfolio-2026/03- Optimización De Inventario' filename='04_inventario_final.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
         </named-connections>
-        <relation connection='textscan.0825sa21q58zra1ez0enb0pwb4n0' name='Inventario_Final_Portfolio.csv' table='[Inventario_Final_Portfolio#csv]' type='table'>
+        <relation connection='textscan.0aq4b431x3jx631bvddig0vv8v6t' name='04_inventario_final.csv' table='[04_inventario_final#csv]' type='table'>
           <columns character-set='UTF-8' header='yes' locale='es_AR' separator=';'>
             <column datatype='integer' name='Producto_ID' ordinal='0' />
             <column datatype='string' name='Nombre_Producto' ordinal='1' />
@@ -41,7 +44,7 @@
           <metadata-record class='capability'>
             <remote-name />
             <remote-type>0</remote-type>
-            <parent-name>[Inventario_Final_Portfolio.csv]</parent-name>
+            <parent-name>[04_inventario_final.csv]</parent-name>
             <remote-alias />
             <aggregation>Count</aggregation>
             <contains-null>true</contains-null>
@@ -60,7 +63,7 @@
             <remote-name>Producto_ID</remote-name>
             <remote-type>20</remote-type>
             <local-name>[Producto_ID]</local-name>
-            <parent-name>[Inventario_Final_Portfolio.csv]</parent-name>
+            <parent-name>[04_inventario_final.csv]</parent-name>
             <remote-alias>Producto_ID</remote-alias>
             <ordinal>0</ordinal>
             <local-type>integer</local-type>
@@ -72,7 +75,7 @@
             <remote-name>Nombre_Producto</remote-name>
             <remote-type>129</remote-type>
             <local-name>[Nombre_Producto]</local-name>
-            <parent-name>[Inventario_Final_Portfolio.csv]</parent-name>
+            <parent-name>[04_inventario_final.csv]</parent-name>
             <remote-alias>Nombre_Producto</remote-alias>
             <ordinal>1</ordinal>
             <local-type>string</local-type>
@@ -87,7 +90,7 @@
             <remote-name>Stock_Inicial</remote-name>
             <remote-type>20</remote-type>
             <local-name>[Stock_Inicial]</local-name>
-            <parent-name>[Inventario_Final_Portfolio.csv]</parent-name>
+            <parent-name>[04_inventario_final.csv]</parent-name>
             <remote-alias>Stock_Inicial</remote-alias>
             <ordinal>2</ordinal>
             <local-type>integer</local-type>
@@ -99,7 +102,7 @@
             <remote-name>Ventas_Mes</remote-name>
             <remote-type>20</remote-type>
             <local-name>[Ventas_Mes]</local-name>
-            <parent-name>[Inventario_Final_Portfolio.csv]</parent-name>
+            <parent-name>[04_inventario_final.csv]</parent-name>
             <remote-alias>Ventas_Mes</remote-alias>
             <ordinal>3</ordinal>
             <local-type>integer</local-type>
@@ -111,7 +114,7 @@
             <remote-name>Stock_Remanente</remote-name>
             <remote-type>20</remote-type>
             <local-name>[Stock_Remanente]</local-name>
-            <parent-name>[Inventario_Final_Portfolio.csv]</parent-name>
+            <parent-name>[04_inventario_final.csv]</parent-name>
             <remote-alias>Stock_Remanente</remote-alias>
             <ordinal>4</ordinal>
             <local-type>integer</local-type>
@@ -123,7 +126,7 @@
             <remote-name>Estado_Inventario</remote-name>
             <remote-type>129</remote-type>
             <local-name>[Estado_Inventario]</local-name>
-            <parent-name>[Inventario_Final_Portfolio.csv]</parent-name>
+            <parent-name>[04_inventario_final.csv]</parent-name>
             <remote-alias>Estado_Inventario</remote-alias>
             <ordinal>5</ordinal>
             <local-type>string</local-type>
@@ -146,7 +149,7 @@
       <column caption='Inventario_Final_Portfolio.csv' datatype='table' name='[__tableau_internal_object_id__].[Inventario_Final_Portfolio.csv_8DC500FAD6F14F608830ACCFCFC5C0A9]' role='measure' type='quantitative' />
       <column-instance column='[Estado_Inventario]' derivation='None' name='[none:Estado_Inventario:nk]' pivot='key' type='nominal' />
       <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
-        <connection access_mode='readonly' author-locale='es_ES' class='hyper' dbname='C:/Users/numaj/AppData/Local/Temp/TableauTemp/#TableauTemp_1g2x91z1ehrhr71afftf10xnkx23.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='04/03/2026 08:58:28 PM' username='tableau_internal_user'>
+        <connection access_mode='readonly' author-locale='es_ES' class='hyper' dbname='C:/Users/numaj/AppData/Local/Temp/TableauTemp/#TableauTemp_0nrncdw1ekc7ap1bjhhjo1uk5am8.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='04/04/2026 05:01:33 AM' username='tableau_internal_user'>
           <relation name='Extract' table='[Extract].[Extract]' type='table' />
           <metadata-records>
             <metadata-record class='column'>
@@ -156,7 +159,7 @@
               <parent-name>[Extract]</parent-name>
               <remote-alias>Producto_ID</remote-alias>
               <ordinal>0</ordinal>
-              <family>Inventario_Final_Portfolio.csv</family>
+              <family>04_inventario_final.csv</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
               <approx-count>4</approx-count>
@@ -170,7 +173,7 @@
               <parent-name>[Extract]</parent-name>
               <remote-alias>Nombre_Producto</remote-alias>
               <ordinal>1</ordinal>
-              <family>Inventario_Final_Portfolio.csv</family>
+              <family>04_inventario_final.csv</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
               <approx-count>4</approx-count>
@@ -185,7 +188,7 @@
               <parent-name>[Extract]</parent-name>
               <remote-alias>Stock_Inicial</remote-alias>
               <ordinal>2</ordinal>
-              <family>Inventario_Final_Portfolio.csv</family>
+              <family>04_inventario_final.csv</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
               <approx-count>4</approx-count>
@@ -199,7 +202,7 @@
               <parent-name>[Extract]</parent-name>
               <remote-alias>Ventas_Mes</remote-alias>
               <ordinal>3</ordinal>
-              <family>Inventario_Final_Portfolio.csv</family>
+              <family>04_inventario_final.csv</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
               <approx-count>4</approx-count>
@@ -213,7 +216,7 @@
               <parent-name>[Extract]</parent-name>
               <remote-alias>Stock_Remanente</remote-alias>
               <ordinal>4</ordinal>
-              <family>Inventario_Final_Portfolio.csv</family>
+              <family>04_inventario_final.csv</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
               <approx-count>3</approx-count>
@@ -227,7 +230,7 @@
               <parent-name>[Extract]</parent-name>
               <remote-alias>Estado_Inventario</remote-alias>
               <ordinal>5</ordinal>
-              <family>Inventario_Final_Portfolio.csv</family>
+              <family>04_inventario_final.csv</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
               <approx-count>3</approx-count>
@@ -262,7 +265,7 @@
         <objects>
           <object caption='Inventario_Final_Portfolio.csv' id='Inventario_Final_Portfolio.csv_8DC500FAD6F14F608830ACCFCFC5C0A9'>
             <properties context=''>
-              <relation connection='textscan.0825sa21q58zra1ez0enb0pwb4n0' name='Inventario_Final_Portfolio.csv' table='[Inventario_Final_Portfolio#csv]' type='table'>
+              <relation connection='textscan.0aq4b431x3jx631bvddig0vv8v6t' name='04_inventario_final.csv' table='[04_inventario_final#csv]' type='table'>
                 <columns character-set='UTF-8' header='yes' locale='es_AR' separator=';'>
                   <column datatype='integer' name='Producto_ID' ordinal='0' />
                   <column datatype='string' name='Nombre_Producto' ordinal='1' />
@@ -405,7 +408,7 @@
           </strip>
         </edge>
         <edge name='right'>
-          <strip size='174'>
+          <strip size='173'>
             <card pane-specification-id='0' param='[federated.0qcdtht0pgqzt411xqfne1vrbdg1].[none:Estado_Inventario:nk]' type='color' />
           </strip>
         </edge>
@@ -439,74 +442,74 @@
     </thumbnail>
     <thumbnail height='192' name='Hoja 2' width='192'>
       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
-      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
+      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
     </thumbnail>
   </thumbnails>
 </workbook>

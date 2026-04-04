@@ -20,11 +20,11 @@ Fase de interacción con el motor de base de datos relacional.
 Desarrollo de un script de procesamiento intermedio para asegurar la escalabilidad del reporte.
 * **Middleware:** Simulación de extracción de base de datos y aplicación de reglas de limpieza para asegurar la integridad de los cálculos de stock remanente.
 * **Estandarización:** Formateo automático del dataset para garantizar compatibilidad regional con herramientas de Business Intelligence (BI).
-* *Archivo:* `02_generador_reporte.py`
+* *Archivo:* `03_generador_reporte.py`
 
 ### 03 - Dataset de Salida (CSV)
 Producto final del proceso de transformación (ETL). Es un archivo normalizado, depurado y listo para ser consumido por departamentos financieros o herramientas de visualización.
-* *Archivo:* `03_reporte_inventario_final.csv`
+* *Archivo:* `04_reporte_inventario_final.csv`
 
 ### 04 - Business Intelligence y Toma de Decisiones (Tableau)
 Capa final de visualización orientada a usuarios finales y gerencia.

@@ -1,38 +1,45 @@
-# 🛒 Auditoría de Rentabilidad Retail: Saneamiento y Análisis de ROI
+# 📊 Optimización de Inventario y Alertas Críticas (Retail)
 
-> **Nota de Portafolio:** Este proyecto aborda uno de los problemas más comunes en el análisis de datos: la "Entropía de Datos" en sistemas de venta manuales. El objetivo fue transformar una base de datos contaminada en una herramienta de decisión estratégica para la dirección comercial.
+> **Nota de Portafolio:** Este proyecto es una solución funcional diseñada para la gestión de activos y mitigación de riesgos operativos. El objetivo es demostrar la arquitectura técnica y la lógica de negocio aplicada al control de stock.
 
-## 🎯 El Desafío de Negocio
-Se detectó que el departamento de ventas registraba inconsistencias críticas: nombres de ciudades duplicados (ej. "bs as", "CABA", "Buenos Aires"), formatos de moneda tipo string y registros de fecha nulos. Sin sanear estos datos, el cálculo de rentabilidad real era imposible.
+## 🎯 Objetivo del Proyecto
+El cliente presentaba ineficiencias en la cadena de suministro y pérdidas económicas por quiebres de stock no detectados. Se diseñó un **pipeline de datos** que automatiza la monitorización de niveles de inventario, permitiendo al departamento de compras ejecutar reposiciones proactivas mediante un sistema de alertas dinámicas.
 
 ---
 
-## 🏗️ Arquitectura de la Solución (Pipeline de Datos)
+## 🏗️ Arquitectura de la Solución (Pipeline 1-5)
 
-### 01 - Normalización y Saneamiento (SQL)
-* **Data Wrangling:** Implementación de lógica `CASE WHEN` y `UPPER(TRIM())` para unificar la geografía de los puntos de venta.
-* **Casteo de Tipos:** Transformación de datos sucios (strings con símbolos monetarios) a tipos `DECIMAL` para asegurar la precisión aritmética en los cálculos de margen.
-* *Archivo:* `01- Limpieza_Ventas_Retail.sql`
+La solución se estructura en 5 fases técnicas integradas que garantizan la trazabilidad de la información:
 
-### 02 - Enriquecimiento y ETL (Python)
-* **Lógica de Negocio:** Automatización del cálculo del **ROI (Retorno de Inversión)** mediante Pandas, permitiendo identificar no solo cuánto se vende, sino qué tan eficiente es cada peso invertido por categoría.
-* *Archivo:* `02- Limpieza_Ventas_Retail.py`
+### 01 - Extracción y Modelado (SQL)
+* **Lógica de Negocio:** Implementación de consultas avanzadas mediante **CTEs** para la consolidación de inventario físico y ventas transaccionales.
+* **Inteligencia de Datos:** El sistema aplica una lógica de **proporcionalidad sobre el stock inicial** para disparar estados de criticidad (`URGENTE`, `ALERTA`, `SUFICIENTE`).
+* *Archivo:* `01- optimizacion_inventario.sql`
 
-### 03 - Dataset de Auditoría (CSV)
-* **Single Source of Truth:** Generación de un output estandarizado con métricas de rendimiento listas para el consumo de Business Intelligence.
-* *Archivo:* `03_Reporte_Retail_Saneado.csv`
+### 02 - Puente de Datos SQL (CSV)
+* **Interoperabilidad:** Exportación de los datos saneados desde el motor SQL para su procesamiento en la capa analítica de Python.
+* *Archivo:* `02_Logica_Inventario_SQL.csv`
 
-### 04 - Visualización Ejecutiva (Tableau)
-* **Análisis de Proporción:** Uso de Treemaps para identificar jerarquías de margen por producto.
-* **Diagnóstico Regional:** Gráficos de barras de ROI por ciudad que permiten detectar oportunidades de expansión o fallas en la distribución.
-* *Visualización:* [**Ver Dashboard en Tableau Public**](https://public.tableau.com/app/profile/numa.cacho/viz/Libro1_17752683792050/Dashboard1)
+### 03 - Automatización y ETL (Python)
+* **Procesamiento:** Script de transformación que ingiere el CSV de SQL y aplica reglas de limpieza para asegurar la integridad de los cálculos de stock remanente.
+* **Estandarización:** Formateo automático del dataset para garantizar compatibilidad con herramientas de BI.
+* *Archivo:* `03- optimizacion_inventario.py`
+
+### 04 - Dataset de Salida (CSV Final)
+* **Single Source of Truth:** Producto final del proceso ETL. Es un archivo normalizado, depurado y listo para ser consumido por gerencia.
+* *Archivo:* `04- inventario_final.csv`
+
+### 05 - Business Intelligence y Toma de Decisiones (Tableau)
+* **Funcionalidad:** Dashboard interactivo que resalta visualmente los productos con mayor riesgo de quiebre.
+* **UX/UI:** Implementación de tooltips personalizados y filtros por estado de criticidad para agilizar la respuesta operativa.
+* *Visualización:* `05- Optimizacion_Inventario.twb`
 
 ---
 
 ## 🛠️ Stack Tecnológico
-* **SQL:** Limpieza profunda de datos (Data Cleaning).
-* **Python (Pandas):** Ingeniería de métricas de rentabilidad.
-* **Tableau:** Visualización interactiva y dashboards de diagnóstico.
+* **SQL:** Modelado de datos y lógica transaccional.
+* **Python (Pandas):** Automatización de procesos y transformación de datos (ETL).
+* **Tableau:** Inteligencia de negocios y visualización estratégica.
 
 ---
-*Este proyecto cierra mi primer ciclo de especialización, demostrando capacidad técnica para limpiar, procesar y visualizar datos que impactan en el resultado económico de una empresa.*
+*Este proyecto refleja una competencia sólida en el manejo del ciclo de vida del dato, desde su almacenamiento en crudo hasta su transformación en una herramienta de decisión empresarial.*

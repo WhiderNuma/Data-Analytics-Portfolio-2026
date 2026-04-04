@@ -20,11 +20,11 @@ Fase de estructuración en el motor de base de datos.
 Desarrollo de la lógica de procesamiento para la estandarización de reportes mensuales.
 * **Procesamiento:** El script actúa como capa de transformación (ETL), consolidando categorías y calculando los saldos netos operativos.
 * **Sincronización:** Generación de un output optimizado que garantiza la coherencia numérica entre la base de datos y la capa de visualización.
-* *Archivo:* `02- Analisis Flujo De Caja.py`
+* *Archivo:* `03- Analisis_Flujo_Caja.py`
 
 ### 03 - Dataset Estructurado (CSV)
 Fuente de verdad única (Single Source of Truth) resultante del proceso de ingeniería. Contiene la serie temporal depurada y lista para auditoría financiera o consumo de BI.
-* *Archivo:* `03- Flujo_Caja_Final.csv`
+* *Archivo:* `04- Flujo_Caja_Final.csv`
 
 ### 04 - Business Intelligence y Dashboards (Tableau)
 Capa de visualización orientada a la toma de decisiones ejecutivas.
