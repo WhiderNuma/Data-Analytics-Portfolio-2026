@@ -38,5 +38,3 @@ Solución de ingeniería financiera para monitorizar la solvencia y capacidad de
 * **Automatización y ETL:** Python (Pandas)
 * **Inteligencia de Negocios:** Tableau
 * **Control de Versiones:** Git / GitHub
-
-> *"Traduciendo la entropía transaccional en respuestas estratégicas rentables."*
