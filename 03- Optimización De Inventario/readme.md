@@ -16,17 +16,17 @@ Fase de interacción con el motor de base de datos relacional.
 * **Inteligencia de Datos:** El sistema no utiliza umbrales fijos; aplica una lógica de **proporcionalidad sobre el stock inicial** para disparar estados de criticidad (`URGENTE`, `ALERTA`, `SUFICIENTE`).
 * *Archivo:* `01_logica_inventario.sql`
 
-### 02 - Automatización y ETL (Python)
+### 03 - Automatización y ETL (Python)
 Desarrollo de un script de procesamiento intermedio para asegurar la escalabilidad del reporte.
 * **Middleware:** Simulación de extracción de base de datos y aplicación de reglas de limpieza para asegurar la integridad de los cálculos de stock remanente.
 * **Estandarización:** Formateo automático del dataset para garantizar compatibilidad regional con herramientas de Business Intelligence (BI).
 * *Archivo:* `03_generador_reporte.py`
 
-### 03 - Dataset de Salida (CSV)
+### 04 - Dataset de Salida (CSV)
 Producto final del proceso de transformación (ETL). Es un archivo normalizado, depurado y listo para ser consumido por departamentos financieros o herramientas de visualización.
 * *Archivo:* `04_reporte_inventario_final.csv`
 
-### 04 - Business Intelligence y Toma de Decisiones (Tableau)
+### 05 - Business Intelligence y Toma de Decisiones (Tableau)
 Capa final de visualización orientada a usuarios finales y gerencia.
 * **Funcionalidad:** Dashboard interactivo que resalta visualmente los productos con mayor riesgo de quiebre.
 * **UX/UI:** Implementación de tooltips personalizados y filtros por estado de criticidad para agilizar la respuesta operativa.

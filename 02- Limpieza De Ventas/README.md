@@ -32,7 +32,7 @@ La solución se estructura en 5 fases técnicas integradas que garantizan la tra
 ### 05 - Business Intelligence y Toma de Decisiones (Tableau)
 * **Funcionalidad:** Dashboard interactivo que resalta visualmente los productos con mayor riesgo de quiebre.
 * **UX/UI:** Implementación de tooltips personalizados y filtros por estado de criticidad para agilizar la respuesta operativa.
-* *Visualización:* `05- Optimizacion_Inventario.twb`
+* *Visualización:* [**Acceder al Dashboard Interactivo aquí**](https://public.tableau.com/app/profile/numa.cacho/viz/Libro1_17752683792050/Dashboard1)
 
 ---
 
