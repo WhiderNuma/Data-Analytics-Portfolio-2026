@@ -1,0 +1,5 @@
+Producto_ID;Nombre_Producto;Stock_Inicial;Ventas_Mes;Stock_Remanente;Estado_Inventario
+101;Smartphone X;100;85;15;🔴 URGENTE: REABASTECER
+102;Laptop Gaming;50;35;15;🟡 ALERTA: STOCK BAJO
+103;Auriculares BT;200;120;80;🟡 ALERTA: STOCK BAJO
+104;Monitor 4K;40;5;35;🟢 STOCK SUFICIENTE

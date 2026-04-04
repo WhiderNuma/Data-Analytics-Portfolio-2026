@@ -1,0 +1,580 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0226.1626                               -->
+<workbook original-version='18.1' source-build='2026.1.0 (20261.26.0226.1626)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <CustomReferenceLineTooltips />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='Analisis_Flujo_Caja' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='03- Flujo_Caja_Final' inline='true' name='federated.15m8gs10wes13016uimsq1ok2ids' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='03- Flujo_Caja_Final' name='textscan.0tejw510fx2pvi11yp16z1umstk6'>
+            <connection class='textscan' directory='C:/Users/numaj/Downloads/datos/proyecto_data/Proyectos/Analisis Flujo De Caja' filename='03- Flujo_Caja_Final.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0tejw510fx2pvi11yp16z1umstk6' name='03- Flujo_Caja_Final.csv' table='[03- Flujo_Caja_Final#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='es_AR' separator=';'>
+            <column datatype='integer' name='Mes_ID' ordinal='0' />
+            <column datatype='string' name='Mes_Nombre' ordinal='1' />
+            <column datatype='integer' name='Monto_Neto' ordinal='2' />
+            <column datatype='integer' name='Ahorro_Acumulado' ordinal='3' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[03- Flujo_Caja_Final.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;;&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;es_AR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mes_ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Mes_ID]</local-name>
+            <parent-name>[03- Flujo_Caja_Final.csv]</parent-name>
+            <remote-alias>Mes_ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[03- Flujo_Caja_Final.csv_43828552F8294A1A948623AE908FF792]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mes_Nombre</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Mes_Nombre]</local-name>
+            <parent-name>[03- Flujo_Caja_Final.csv]</parent-name>
+            <remote-alias>Mes_Nombre</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[03- Flujo_Caja_Final.csv_43828552F8294A1A948623AE908FF792]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Monto_Neto</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Monto_Neto]</local-name>
+            <parent-name>[03- Flujo_Caja_Final.csv]</parent-name>
+            <remote-alias>Monto_Neto</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[03- Flujo_Caja_Final.csv_43828552F8294A1A948623AE908FF792]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ahorro_Acumulado</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Ahorro_Acumulado]</local-name>
+            <parent-name>[03- Flujo_Caja_Final.csv]</parent-name>
+            <remote-alias>Ahorro_Acumulado</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[03- Flujo_Caja_Final.csv_43828552F8294A1A948623AE908FF792]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Ahorro Acumulado' datatype='integer' name='[Ahorro_Acumulado]' role='measure' type='quantitative' />
+      <column caption='Mes ID' datatype='integer' name='[Mes_ID]' role='dimension' type='quantitative' />
+      <column caption='Mes Nombre' datatype='string' name='[Mes_Nombre]' role='dimension' type='nominal' />
+      <column caption='Monto Neto' datatype='integer' name='[Monto_Neto]' role='measure' type='quantitative' />
+      <column caption='03- Flujo_Caja_Final.csv' datatype='table' name='[__tableau_internal_object_id__].[03- Flujo_Caja_Final.csv_43828552F8294A1A948623AE908FF792]' role='measure' type='quantitative' />
+      <column-instance column='[Ahorro_Acumulado]' derivation='Sum' name='[sum:Ahorro_Acumulado:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Monto_Neto]' derivation='Sum' name='[sum:Monto_Neto:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='es_ES' class='hyper' dbname='C:/Users/numaj/AppData/Local/Temp/TableauTemp/#TableauTemp_1hsvgi70ocskb919jygb8078miw2.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='04/03/2026 10:08:28 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Mes_ID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Mes_ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Mes_ID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>03- Flujo_Caja_Final.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[03- Flujo_Caja_Final.csv_43828552F8294A1A948623AE908FF792]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Mes_Nombre</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Mes_Nombre]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Mes_Nombre</remote-alias>
+              <ordinal>1</ordinal>
+              <family>03- Flujo_Caja_Final.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[03- Flujo_Caja_Final.csv_43828552F8294A1A948623AE908FF792]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Monto_Neto</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Monto_Neto]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Monto_Neto</remote-alias>
+              <ordinal>2</ordinal>
+              <family>03- Flujo_Caja_Final.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[03- Flujo_Caja_Final.csv_43828552F8294A1A948623AE908FF792]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Ahorro_Acumulado</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Ahorro_Acumulado]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Ahorro_Acumulado</remote-alias>
+              <ordinal>3</ordinal>
+              <family>03- Flujo_Caja_Final.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[03- Flujo_Caja_Final.csv_43828552F8294A1A948623AE908FF792]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.15m8gs10wes13016uimsq1ok2ids].[sum:Ahorro_Acumulado:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.15m8gs10wes13016uimsq1ok2ids].[sum:Monto_Neto:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Argentina&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='03- Flujo_Caja_Final.csv' id='03- Flujo_Caja_Final.csv_43828552F8294A1A948623AE908FF792'>
+            <properties context=''>
+              <relation connection='textscan.0tejw510fx2pvi11yp16z1umstk6' name='03- Flujo_Caja_Final.csv' table='[03- Flujo_Caja_Final#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='es_AR' separator=';'>
+                  <column datatype='integer' name='Mes_ID' ordinal='0' />
+                  <column datatype='string' name='Mes_Nombre' ordinal='1' />
+                  <column datatype='integer' name='Monto_Neto' ordinal='2' />
+                  <column datatype='integer' name='Ahorro_Acumulado' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Hoja 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{00804E3C-7056-417F-B2C3-3ADA83BDAEB4}' />
+    </worksheet>
+    <worksheet name='Hoja 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Reporte Estratégico: Proyección de Ahorro y Flujo de Caja</run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#000000' fontname='Benton Sans Book' italic='true' underline='true'>Análisis de solvencia para el proyecto de recolocalización BA</run>
+          </formatted-text>
+        </title>
+        <caption>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Reporte Estratégico: Proyección de Ahorro y Flujo de Caja</run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='03- Flujo_Caja_Final' name='federated.15m8gs10wes13016uimsq1ok2ids' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15m8gs10wes13016uimsq1ok2ids'>
+            <column caption='Ahorro Acumulado' datatype='integer' name='[Ahorro_Acumulado]' role='measure' type='quantitative' />
+            <column caption='Mes Nombre' datatype='string' name='[Mes_Nombre]' role='dimension' type='nominal' />
+            <column caption='Monto Neto' datatype='integer' name='[Monto_Neto]' role='measure' type='quantitative' />
+            <column-instance column='[Mes_Nombre]' derivation='None' name='[none:Mes_Nombre:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Ahorro_Acumulado]' derivation='Sum' name='[sum:Ahorro_Acumulado:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Monto_Neto]' derivation='Sum' name='[sum:Monto_Neto:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.15m8gs10wes13016uimsq1ok2ids].[sum:Ahorro_Acumulado:qk]' field-type='quantitative' fold='true' scope='rows' synchronized='true' type='space' />
+            <format attr='stroke-color' value='#f5f5f500' />
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='tick-color' value='#f5f5f500' />
+            <format attr='title' class='0' field='[federated.15m8gs10wes13016uimsq1ok2ids].[sum:Ahorro_Acumulado:qk]' scope='rows' value='Ahorro Total' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-color' value='#7f7f7f00' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#ffffff' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='line-visibility' id='refline0' value='on' />
+            <format attr='line-pattern-only' id='refline0' value='dashed' />
+            <format attr='stroke-color' id='refline0' value='#e15759' />
+            <format attr='stroke-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-color' scope='rows' value='#f2f2f200' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-color' value='#cbcbcb00' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.15m8gs10wes13016uimsq1ok2ids].[:Measure Names]' />
+            </encodings>
+            <reference-line axis-column='[federated.15m8gs10wes13016uimsq1ok2ids].[sum:Ahorro_Acumulado:qk]' enable-instant-analytics='true' formula='constant' id='refline0' label-type='automatic' scope='per-table' tooltip='META: MUDANZA BA' tooltip-type='custom' value='1000000' value-column='[federated.15m8gs10wes13016uimsq1ok2ids].[sum:Ahorro_Acumulado:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.15m8gs10wes13016uimsq1ok2ids].[sum:Monto_Neto:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.15m8gs10wes13016uimsq1ok2ids].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.15m8gs10wes13016uimsq1ok2ids].[sum:Ahorro_Acumulado:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.15m8gs10wes13016uimsq1ok2ids].[:Measure Names]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true'><![CDATA[Mes: <[federated.15m8gs10wes13016uimsq1ok2ids].[none:Mes_Nombre:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[Ahorro Acumulado: $<[federated.15m8gs10wes13016uimsq1ok2ids].[sum:Ahorro_Acumulado:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-color' value='#00000000' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.15m8gs10wes13016uimsq1ok2ids].[sum:Monto_Neto:qk] + [federated.15m8gs10wes13016uimsq1ok2ids].[sum:Ahorro_Acumulado:qk])</rows>
+        <cols>[federated.15m8gs10wes13016uimsq1ok2ids].[none:Mes_Nombre:nk]</cols>
+      </table>
+      <simple-id uuid='{B8DE2BB7-6F86-4CEE-9B08-C3CF009058AB}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Hoja 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8DDD3668-05E0-4529-BAEC-DD068066E31B}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Hoja 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='92'>
+            <card type='caption' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='174'>
+            <card AVG='true' KURTOSIS='false' MAX='true' MEDIAN='true' MIN='true' QUART1='false' QUART3='false' SKEWNESS='false' STDEV='false' SUM='true' type='summary' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.15m8gs10wes13016uimsq1ok2ids].[none:Mes_Nombre:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{7BF420C8-1DA7-4E3B-B9AE-B1F171B36323}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Hoja 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Hoja 2' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>

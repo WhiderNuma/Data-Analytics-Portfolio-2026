@@ -1,0 +1,512 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0226.1626                               -->
+<workbook original-version='18.1' source-build='2026.1.0 (20261.26.0226.1626)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='Optimizacion_Inventario' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Inventario_Final_Portfolio' inline='true' name='federated.0qcdtht0pgqzt411xqfne1vrbdg1' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Inventario_Final_Portfolio' name='textscan.0825sa21q58zra1ez0enb0pwb4n0'>
+            <connection class='textscan' directory='C:/Users/numaj/Downloads' filename='Inventario_Final_Portfolio.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0825sa21q58zra1ez0enb0pwb4n0' name='Inventario_Final_Portfolio.csv' table='[Inventario_Final_Portfolio#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='es_AR' separator=';'>
+            <column datatype='integer' name='Producto_ID' ordinal='0' />
+            <column datatype='string' name='Nombre_Producto' ordinal='1' />
+            <column datatype='integer' name='Stock_Inicial' ordinal='2' />
+            <column datatype='integer' name='Ventas_Mes' ordinal='3' />
+            <column datatype='integer' name='Stock_Remanente' ordinal='4' />
+            <column datatype='string' name='Estado_Inventario' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Inventario_Final_Portfolio.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;;&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;es_AR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Producto_ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Producto_ID]</local-name>
+            <parent-name>[Inventario_Final_Portfolio.csv]</parent-name>
+            <remote-alias>Producto_ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Inventario_Final_Portfolio.csv_8DC500FAD6F14F608830ACCFCFC5C0A9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nombre_Producto</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Nombre_Producto]</local-name>
+            <parent-name>[Inventario_Final_Portfolio.csv]</parent-name>
+            <remote-alias>Nombre_Producto</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[Inventario_Final_Portfolio.csv_8DC500FAD6F14F608830ACCFCFC5C0A9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Stock_Inicial</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Stock_Inicial]</local-name>
+            <parent-name>[Inventario_Final_Portfolio.csv]</parent-name>
+            <remote-alias>Stock_Inicial</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Inventario_Final_Portfolio.csv_8DC500FAD6F14F608830ACCFCFC5C0A9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ventas_Mes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Ventas_Mes]</local-name>
+            <parent-name>[Inventario_Final_Portfolio.csv]</parent-name>
+            <remote-alias>Ventas_Mes</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Inventario_Final_Portfolio.csv_8DC500FAD6F14F608830ACCFCFC5C0A9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Stock_Remanente</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Stock_Remanente]</local-name>
+            <parent-name>[Inventario_Final_Portfolio.csv]</parent-name>
+            <remote-alias>Stock_Remanente</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Inventario_Final_Portfolio.csv_8DC500FAD6F14F608830ACCFCFC5C0A9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Estado_Inventario</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Estado_Inventario]</local-name>
+            <parent-name>[Inventario_Final_Portfolio.csv]</parent-name>
+            <remote-alias>Estado_Inventario</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[Inventario_Final_Portfolio.csv_8DC500FAD6F14F608830ACCFCFC5C0A9]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Estado Inventario' datatype='string' name='[Estado_Inventario]' role='dimension' type='nominal' />
+      <column caption='Nombre Producto' datatype='string' name='[Nombre_Producto]' role='dimension' type='nominal' />
+      <column caption='Producto ID' datatype='integer' name='[Producto_ID]' role='dimension' type='ordinal' />
+      <column caption='Stock Inicial' datatype='integer' name='[Stock_Inicial]' role='measure' type='quantitative' />
+      <column caption='Stock Remanente' datatype='integer' name='[Stock_Remanente]' role='measure' type='quantitative' />
+      <column caption='Ventas Mes' datatype='integer' name='[Ventas_Mes]' role='dimension' type='quantitative' />
+      <column caption='Inventario_Final_Portfolio.csv' datatype='table' name='[__tableau_internal_object_id__].[Inventario_Final_Portfolio.csv_8DC500FAD6F14F608830ACCFCFC5C0A9]' role='measure' type='quantitative' />
+      <column-instance column='[Estado_Inventario]' derivation='None' name='[none:Estado_Inventario:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='es_ES' class='hyper' dbname='C:/Users/numaj/AppData/Local/Temp/TableauTemp/#TableauTemp_1g2x91z1ehrhr71afftf10xnkx23.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='04/03/2026 08:58:28 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Producto_ID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Producto_ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Producto_ID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Inventario_Final_Portfolio.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Inventario_Final_Portfolio.csv_8DC500FAD6F14F608830ACCFCFC5C0A9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Nombre_Producto</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Nombre_Producto]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Nombre_Producto</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Inventario_Final_Portfolio.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[Inventario_Final_Portfolio.csv_8DC500FAD6F14F608830ACCFCFC5C0A9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Stock_Inicial</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Stock_Inicial]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Stock_Inicial</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Inventario_Final_Portfolio.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Inventario_Final_Portfolio.csv_8DC500FAD6F14F608830ACCFCFC5C0A9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Ventas_Mes</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Ventas_Mes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Ventas_Mes</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Inventario_Final_Portfolio.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Inventario_Final_Portfolio.csv_8DC500FAD6F14F608830ACCFCFC5C0A9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Stock_Remanente</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Stock_Remanente]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Stock_Remanente</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Inventario_Final_Portfolio.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Inventario_Final_Portfolio.csv_8DC500FAD6F14F608830ACCFCFC5C0A9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Estado_Inventario</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Estado_Inventario]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Estado_Inventario</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Inventario_Final_Portfolio.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[Inventario_Final_Portfolio.csv_8DC500FAD6F14F608830ACCFCFC5C0A9]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Estado_Inventario:nk]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>&quot;🟢 STOCK SUFICIENTE&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;🔴 URGENTE: REABASTECER&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;🟡 ALERTA: STOCK BAJO&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Argentina&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='Inventario_Final_Portfolio.csv' id='Inventario_Final_Portfolio.csv_8DC500FAD6F14F608830ACCFCFC5C0A9'>
+            <properties context=''>
+              <relation connection='textscan.0825sa21q58zra1ez0enb0pwb4n0' name='Inventario_Final_Portfolio.csv' table='[Inventario_Final_Portfolio#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='es_AR' separator=';'>
+                  <column datatype='integer' name='Producto_ID' ordinal='0' />
+                  <column datatype='string' name='Nombre_Producto' ordinal='1' />
+                  <column datatype='integer' name='Stock_Inicial' ordinal='2' />
+                  <column datatype='integer' name='Ventas_Mes' ordinal='3' />
+                  <column datatype='integer' name='Stock_Remanente' ordinal='4' />
+                  <column datatype='string' name='Estado_Inventario' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Hoja 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{90B2CEDF-B575-4BA5-BC3E-C3E0676AA762}' />
+    </worksheet>
+    <worksheet name='Hoja 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Inventario_Final_Portfolio' name='federated.0qcdtht0pgqzt411xqfne1vrbdg1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0qcdtht0pgqzt411xqfne1vrbdg1'>
+            <column caption='Estado Inventario' datatype='string' name='[Estado_Inventario]' role='dimension' type='nominal' />
+            <column caption='Nombre Producto' datatype='string' name='[Nombre_Producto]' role='dimension' type='nominal' />
+            <column caption='Stock Inicial' datatype='integer' name='[Stock_Inicial]' role='measure' type='quantitative' />
+            <column caption='Stock Remanente' datatype='integer' name='[Stock_Remanente]' role='measure' type='quantitative' />
+            <column-instance column='[Estado_Inventario]' derivation='None' name='[none:Estado_Inventario:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Nombre_Producto]' derivation='None' name='[none:Nombre_Producto:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Stock_Inicial]' derivation='Sum' name='[sum:Stock_Inicial:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Stock_Remanente]' derivation='Sum' name='[sum:Stock_Remanente:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.0qcdtht0pgqzt411xqfne1vrbdg1].[none:Nombre_Producto:nk]' direction='ASC' using='[federated.0qcdtht0pgqzt411xqfne1vrbdg1].[sum:Stock_Remanente:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0qcdtht0pgqzt411xqfne1vrbdg1].[none:Estado_Inventario:nk]' />
+              <lod column='[federated.0qcdtht0pgqzt411xqfne1vrbdg1].[none:Nombre_Producto:nk]' />
+              <lod column='[federated.0qcdtht0pgqzt411xqfne1vrbdg1].[sum:Stock_Inicial:qk]' />
+              <lod column='[federated.0qcdtht0pgqzt411xqfne1vrbdg1].[sum:Stock_Remanente:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Producto:</run>
+                <run fontcolor='#000000' fontname='Benton Sans Book'><![CDATA[ <[federated.0qcdtht0pgqzt411xqfne1vrbdg1].[none:Nombre_Producto:nk]> ]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Estado:</run>
+                <run fontcolor='#000000' fontname='Benton Sans Book'><![CDATA[ <[federated.0qcdtht0pgqzt411xqfne1vrbdg1].[none:Estado_Inventario:nk]> ]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Stock:</run>
+                <run fontcolor='#000000' fontname='Benton Sans Book'><![CDATA[ <[federated.0qcdtht0pgqzt411xqfne1vrbdg1].[sum:Stock_Remanente:qk]> de <[federated.0qcdtht0pgqzt411xqfne1vrbdg1].[sum:Stock_Inicial:qk]> unidades.]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0qcdtht0pgqzt411xqfne1vrbdg1].[none:Nombre_Producto:nk]</rows>
+        <cols>[federated.0qcdtht0pgqzt411xqfne1vrbdg1].[sum:Stock_Remanente:qk]</cols>
+      </table>
+      <simple-id uuid='{64047005-CEF4-42A5-A65B-AE81945BF51C}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Hoja 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2457F772-9992-4EB2-B909-06CF6FA62C08}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Hoja 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='174'>
+            <card pane-specification-id='0' param='[federated.0qcdtht0pgqzt411xqfne1vrbdg1].[none:Estado_Inventario:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0qcdtht0pgqzt411xqfne1vrbdg1].[none:Estado_Inventario:nk]</field>
+            <field>[federated.0qcdtht0pgqzt411xqfne1vrbdg1].[none:Nombre_Producto:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{B663BB81-9008-449A-873A-D9C6D569D569}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Hoja 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Hoja 2' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
