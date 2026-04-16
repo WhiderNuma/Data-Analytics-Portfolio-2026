@@ -1,40 +1,37 @@
-# 📊 End-to-End Data Analytics Pipelines
+# Strategic Data Analytics Portfolio: End-to-End Business Solutions
 
-Bienvenido a este repositorio. Aquí se agrupan tres proyectos integrales de análisis de datos orientados a resolver problemas críticos de negocio en tres áreas clave: **Comercial, Operativa y Financiera**.
-
-El objetivo principal de este repositorio es demostrar la capacidad de diseñar e implementar **flujos de trabajo completos (Pipelines ETL)**, abarcando desde la limpieza de registros transaccionales crudos hasta la creación de visualizaciones ejecutivas para la toma de decisiones.
+Bienvenido a mi repositorio central de ingeniería y análisis de datos. Este espacio compendia soluciones integrales diseñadas para transformar datos transaccionales crudos en activos estratégicos. Cada proyecto aquí contenido aborda una problemática crítica de negocio en las áreas **Comercial, Operativa o Financiera**, utilizando un enfoque de "Socio Estratégico".
 
 ---
 
-## ⚙️ Arquitectura Estandarizada
-Para garantizar la integridad del dato, la reproducibilidad y la trazabilidad, los tres proyectos operan bajo una metodología de 5 capas secuenciales:
+## ⚙️ Metodología y Arquitectura de Datos
+Para garantizar la integridad, trazabilidad y escalabilidad de las soluciones, todos los proyectos se rigen bajo una arquitectura de **Pipeline Desacoplado en 5 Capas**:
 
-1. **Extracción y Saneamiento (`.sql`):** Uso de bases de datos relacionales para limpieza inicial (Data Wrangling), estructuración mediante CTEs y Window Functions.
-2. **Puente de Datos (`.csv`):** Exportación de datos limpios en formato de texto plano para evitar corrupciones de metadatos.
-3. **Transformación y Lógica de Negocio (`.py`):** Ingesta mediante la librería Pandas en Python para aplicar cálculos de métricas, lógica condicional escalable y acumulaciones.
-4. **Golden Record (`.csv`):** Generación del dataset final estandarizado (*Single Source of Truth*).
-5. **Business Intelligence (`.twb`):** Consumo del dataset mediante Tableau para el desarrollo de Dashboards interactivos y analíticos.
-
----
-
-## 📂 Contenido del Repositorio
-
-### 1. [🛒 Auditoría de Rentabilidad Retail](https://github.com/WhiderNuma/Data-Analytics-Portfolio-2026/tree/main/01-%20Analisis%20Flujo%20De%20Caja)
-**Enfoque: Saneamiento de Datos y Cálculo de ROI.**
-Se aborda el problema de la "Entropía de Datos" en sistemas de venta manuales. El pipeline normaliza inconsistencias geográficas y formatos de moneda corruptos (`UPPER`, `TRIM`, Casteos) para automatizar el cálculo real del Retorno de Inversión (ROI) por categoría de producto.
-
-### 2. [📦 Optimización de Inventario y Alertas Críticas](https://github.com/WhiderNuma/Data-Analytics-Portfolio-2026/tree/main/03-%20Optimización%20De%20Inventario)
-**Enfoque: Lógica Transaccional y Mitigación de Riesgos.**
-Diseñado para evitar pérdidas económicas por quiebres de stock. El flujo cruza inventarios físicos con volúmenes de venta y reemplaza los umbrales fijos por un algoritmo de **proporcionalidad de stock** en Python, disparando alertas operativas dinámicas (`URGENTE`, `ALERTA`).
-
-### 3. [💰 Análisis de Flujo de Caja y Proyección](https://github.com/WhiderNuma/Data-Analytics-Portfolio-2026/tree/main/02-%20Limpieza%20De%20Ventas)
-**Enfoque: Modelado Financiero y Series Temporales.**
-Solución de ingeniería financiera para monitorizar la solvencia y capacidad de ahorro frente a un objetivo de capitalización. Destaca por el uso de **Window Functions** (`SUM OVER`) en SQL para el cálculo de saldos dinámicos sin perder la granularidad de los registros diarios.
+1. **Capa de Extracción y Normalización (SQL):** Interacción directa con motores relacionales para el saneamiento inicial (*Data Wrangling*) y estructuración de esquemas.
+2. **Capa de Datos Crudos (CSV - Raw):** Exportación de datasets saneados que actúan como punto de control de integridad.
+3. **Capa de Transformación y Lógica de Negocio (Python):** Uso de la librería Pandas para la aplicación de algoritmos complejos, cálculos vectoriales y lógica de negocio dinámica.
+4. **Capa de Certificación (CSV - Gold):** Generación de la "Única Fuente de Verdad" (*Single Source of Truth*), un dataset depurado y optimizado.
+5. **Capa de Inteligencia Ejecutiva (Tableau):** Despliegue de dashboards interactivos orientados a reducir el tiempo de toma de decisiones gerenciales.
 
 ---
 
-## 🛠️ Stack Tecnológico Global
-* **Bases de Datos:** SQL (MySQL)
-* **Automatización y ETL:** Python (Pandas)
-* **Inteligencia de Negocios:** Tableau
-* **Control de Versiones:** Git / GitHub
+## 📂 Portafolio de Proyectos
+
+### 1. [🛒 Optimización de Inventario y Alertas Críticas](https://github.com/WhiderNuma/portfolio-analisis-datos-estrategico/tree/main/01-optimizacion-inventario-retail)
+**Foco: Eficiencia Operativa y Mitigación de Riesgos.** Desarrollo de un sistema de alertas dinámicas basado en proporcionalidad de stock. Sustituye los umbrales estáticos por un motor de reglas en Python que detecta riesgos de quiebre de stock en tiempo real, optimizando el ciclo de reabastecimiento.
+
+### 2. [💰 Análisis de Flujo de Caja y Proyección de Capital](https://github.com/WhiderNuma/portfolio-analisis-datos-estrategico/tree/main/02-proyeccion-flujo-caja)
+**Foco: Ingeniería Financiera y Solvencia.** Modelo de monitoreo financiero que procesa ingresos y egresos para proyectar el ahorro acumulado (*Running Totals*). Determina el horizonte temporal de solvencia y el cumplimiento de metas de capitalización estratégica mediante análisis de series temporales.
+
+### 3. [📊 Saneamiento de Datos y Auditoría de Rentabilidad](https://github.com/WhiderNuma/portfolio-analisis-datos-estrategico/tree/main/03-saneamiento-datos-rentabilidad)
+**Foco: Calidad de Datos y Análisis de ROI.** Solución orientada a resolver la "Entropía de Datos" en sistemas transaccionales. Normaliza inconsistencias críticas (monedas, geografía, nulos) para ejecutar una auditoría de rentabilidad precisa, calculando el ROI y margen neto por unidad de negocio.
+
+---
+
+## 🛠️ Stack Tecnológico
+* **SQL:** Modelado, CTEs, Window Functions y normalización.
+* **Python (Pandas):** Automatización de ETL, lógica de negocio y procesamiento escalar.
+* **Tableau:** Visualización estratégica y dashboards ejecutivos de alto impacto.
+
+---
+*Como analista especializado en soluciones estratégicas, mi enfoque combina el rigor técnico de la ingeniería de datos con una visión clara del impacto financiero y operativo de cada decisión.*
